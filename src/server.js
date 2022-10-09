@@ -8,7 +8,7 @@ dotenv.config()
 app.use(express.json())
 app.use('/api/v1', router)
 
-const PORT = process.env.SERVER_PORT ?? 3030
+const PORT = process.env.PORT ?? 3030
 app.listen(PORT, () => {
   console.log(`Server running in ${PORT}`)
 })
